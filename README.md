@@ -8,7 +8,7 @@ __Librairies needed__
 - keyboard
 - scikit-image
 
-Once the virtualenv set, you can download the required modules using:
+Once the virtual environment is set, you can download the required modules using:
 `pip install -r requirements.txt`
 
 ## Quickstart
@@ -16,7 +16,7 @@ Once the virtualenv set, you can download the required modules using:
 
 You can also add options to display:
 - The input images `-di` (which stands for: display images)
-- The bounds around differences `-db` (which stands for: display bounds)
+- The boxed differences `-db` (which stands for: display bounds)
 - The drawed differences `-dd` (which stands for: draw differences)
 - The computed ssim model `-dssim` (which stands for: display ssim)
 
