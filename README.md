@@ -20,6 +20,13 @@ You can also add options to display:
 - The drawed differences `-dd` (which stands for: draw differences)
 - The computed ssim model `-dssim` (which stands for: display ssim)
 
+__Note that the first given file is the reference which will be use for comparison__.
+
+E.g. : 
+`python ./main.py image-1.jpg image-2.jpg image-3.jpg`
+
+Image-2 and Image-3 will be compared to Image-1.
+
 ## Inspirations
 - https://stackoverflow.com/questions/56183201/detect-and-visualize-differences-between-two-images-with-opencv-python
 - https://ece.uwaterloo.ca/~z70wang/publications/ssim.pdf
