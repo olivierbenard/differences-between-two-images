@@ -1,7 +1,7 @@
 # differences-between-two-images (or multiple images)
 Detect and visualize differences between two (or multiple) images with OpenCV Python using SSIM method.
 
-*Librairies needed*
+__Librairies needed__
 - cv2
 - numpy
 - click
@@ -18,7 +18,7 @@ You can also add options to display:
 - The input images `-di` (which stands for: display images)
 - The bounds around differences `-db` (which stands for: display bounds)
 - The drawed differences `-dd` (which stands for: draw differences)
-- The computed ssim model `-dssim` (which stands for: display ssim
+- The computed ssim model `-dssim` (which stands for: display ssim)
 
 ## Inspirations
 - https://stackoverflow.com/questions/56183201/detect-and-visualize-differences-between-two-images-with-opencv-python
