@@ -14,15 +14,15 @@ repos:
         args: ["black"]
         language: system
         pass_filenames: false
-      - id: pylint
-        name: pylint
-        entry: make
-        args: ["pylint"]
-        language: system
-        pass_filenames: false
-      - id: mypy
-        name: mypy
-        entry: make
-        args: [ "mypy" ]
-        language: system
-        pass_filenames: false
+      # - id: pylint
+      #   name: pylint
+      #   entry: make
+      #   args: ["pylint"]
+      #   language: system
+      #   pass_filenames: false
+      # - id: mypy
+      #   name: mypy
+      #   entry: make
+      #   args: [ "mypy" ]
+      #   language: system
+      #   pass_filenames: false
