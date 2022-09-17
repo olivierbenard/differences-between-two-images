@@ -17,7 +17,7 @@ Once the virtual environment is set up, you can call the script using different 
 
 On MacOS:
 
-    poetry run main $(ls ./dataset/*.jpg)
+    poetry run main -bd $(ls ./dataset/*.jpg)
 
 On Windows PowerShell:
 
@@ -29,7 +29,9 @@ You can also add options to display:
 - The drawed differences `-dd` (draw differences)
 - The computed ssim model `-dssim` (display ssim)
 
-**Note:** the first given file is the reference which will be use for comparison.
+**Notes:**
+* The first given file is the reference which will be use for comparison.
+* The results are saved under the `results/` folder by default.
 
 ### Example
 

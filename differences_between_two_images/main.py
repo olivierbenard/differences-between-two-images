@@ -1,9 +1,11 @@
+import os
 import cv2
 import click
 import keyboard  # or import msvcrt on windows
 import numpy as np
 from pathlib import Path
 import warnings
+from dynaconf import settings
 
 warnings.filterwarnings("ignore", category=UserWarning)  # ignore UserWarning
 try:
@@ -114,21 +116,28 @@ def main(display_images, display_ssim, bound_differences, draw_differences, imag
                     f"bound-differences-between-{ref_name}-and-{filename}-on-{ref_name}",
                     temp_ref_frame,
                 )  # display the image on screen
-                cv2.imshow(
-                    f"bound-differences-between-{ref_name}-and-{filename}-on-{filename}",
+                cv2.imwrite(
+                    os.path.join(
+                        settings.PATH_RESULTS,
+                        f"bound-differences-between-{ref_name}-and-{filename}-on-{filename}.jpg",
+                    ),
                     frame,
                 )  # display the image on screen
             if draw_differences:
-                cv2.imshow(
-                    f"draw-differences-between-{ref_name}-and-{filename}", filled_after
+                cv2.imwrite(
+                    os.path.join(
+                        settings.PATH_RESULTS,
+                        f"draw-differences-between-{ref_name}-and-{filename}.jpg",
+                    ),
+                    filled_after,
                 )  # display the image on screen
 
-    while True:
+    # while True:
 
-        keypress = cv2.waitKey(1)
+    #     keypress = cv2.waitKey(1)
 
-        if keypress == 27 or keyboard.is_pressed("q"):
-            break
+    #     if keypress == 27 or keyboard.is_pressed("q"):
+    #         break
 
     cv2.destroyAllWindows()
 
