@@ -10,8 +10,7 @@ black:
 pre-commit-install:
 	poetry run pre-commit install
 
-tests:
+test:
 	poetry run pytest
 
-check:
-	black pylint mypy tests
+check: black pylint mypy test

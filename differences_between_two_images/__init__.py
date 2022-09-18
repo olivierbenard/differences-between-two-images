@@ -1,3 +1,7 @@
+"""
+Module defining the Log Level.
+"""
+
 import logging
 from dynaconf import settings
 
