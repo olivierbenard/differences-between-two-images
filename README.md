@@ -39,6 +39,32 @@ You can also add options to display:
 
 `image-2.jpg` and `image-3.jpg` will be compared to `image-1.jpg`.
 
+## Backend logic explained
+
+Let's take the following images:
+
+![](sprites/image-1.jpg)
+
+and:
+
+![](sprites/image-2.jpg)
+
+The first step to do is to compute the ssim difference after having had binarized the images:
+
+![](sprites/ssim.jpg)
+
+Then, we isolate the differences by binarizing the image:
+
+![](sprites/differences.jpg)
+
+Then, we remove the noise by applying a mask and removing the outliers i.e. the differences for which the surface is inferior to an arbitrary number:
+
+![](sprites/mask.jpg)
+
+Finally, we compute the outbound box for each surface and superpose it to the image:
+
+![](sprites/boxed.jpg)
+
 ## Troubleshooting
 
 If you encounter a similar error when applying `pylint`, e.g.:
