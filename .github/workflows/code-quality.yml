@@ -13,5 +13,5 @@ jobs:
     - run: pip install --upgrade pip
     - run: pip install "black<23" pylint==v3.0.0a3 mypy==v0.902
     - run: black .
-    - run: pylint ./differences_between_two_images
-    - run: mypy ./differences_between_two_images
+    - run: pylint $(git ls-files '*.py')
+    - run: mypy $(git ls-files '*.py')
