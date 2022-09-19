@@ -1,0 +1,28 @@
+exclude: ^(.github|.pylintrc)
+repos:
+  -   repo: https://github.com/pre-commit/pre-commit-hooks
+      rev: v4.1.0
+      hooks:
+        -   id: check-yaml
+        -   id: end-of-file-fixer
+        -   id: trailing-whitespace
+  - repo: local
+    hooks:
+      - id: black
+        name: black
+        entry: make
+        args: ["black"]
+        language: system
+        pass_filenames: false
+      - id: pylint
+        name: pylint
+        entry: make
+        args: ["pylint"]
+        language: system
+        pass_filenames: false
+      - id: mypy
+        name: mypy
+        entry: make
+        args: [ "mypy" ]
+        language: system
+        pass_filenames: false

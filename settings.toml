@@ -1,0 +1,3 @@
+[default]
+LOG_LEVEL = "DEBUG"
+PATH_RESULTS = "results/"
