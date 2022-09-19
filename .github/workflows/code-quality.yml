@@ -14,4 +14,4 @@ jobs:
     - run: pip install "black<23" pylint==v3.0.0a3 mypy==v0.902
     - run: black --diff --check $(git ls-files '*.py')
     # - run: pylint --disable=all --confidence=HIGH $(git ls-files '*.py')
-    - run: mypy --strict --enable=implicit_reexport $(git ls-files '*.py')
+    - run: mypy $(git ls-files '*.py')
