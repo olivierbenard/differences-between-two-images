@@ -1,6 +1,12 @@
 # differences-between-two-images (or multiple images)
 Detect and visualize differences between images with `OpenCV` and the SSIM method. The images are compared with the first provided image.
 
+## Versions
+
+The latest version of this project is currently `2.0.1`.
+
+**Note:** to navigate through the different versions, use e.g. `git checkout tags/1.0.1`.
+
 ## Dependencies
 
 To manage the dependencies, I recommend using the python package manager `poetry`. You might have to install it before using `brew install poetry` (on MacOS).
