@@ -51,7 +51,7 @@ def main(  # pylint: disable=too-many-locals
     bound_differences: bool,
     draw_differences: bool,
     draw_mask: bool,
-    images: list,
+    images: list[str],
 ) -> None:
     """
     Highlight the difference bewteen the provided images.
