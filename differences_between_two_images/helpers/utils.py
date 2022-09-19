@@ -13,7 +13,7 @@ from differences_between_two_images import logging
 logger = logging.getLogger(__name__)
 
 
-def is_enough_images(images: list) -> bool:
+def is_enough_images(images: list[str]) -> bool:
     """
     Take a list of images to compared and check if the cardinality makes sense.
     Args:
@@ -138,7 +138,7 @@ def binarize(image: np.ndarray) -> np.ndarray:
     return thresh
 
 
-def find_contours(threshold: np.ndarray) -> tuple:
+def find_contours(threshold: np.ndarray) -> tuple[np.ndarray]:
     """
     Returns a tuple of matrix.
     Each matrice contains the coordinates of a black area.
