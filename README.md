@@ -24,10 +24,10 @@ On Windows PowerShell:
     python ./main.py $(dir ./dataset/*.jpg)
 
 You can also add options to display:
-- The input images `-di` (display images)
-- The boxed differences `-db` (display bounds)
-- The drawed differences `-dd` (draw differences)
-- The computed ssim model `-dssim` (display ssim)
+- The input images `-dm` (display mask)
+- The boxed differences `-bd` (display outbound boxes)
+- The drawed differences `-dd` (draw differences i.e. the freckles)
+- The computed ssim model `-ds` (display ssim)
 
 **Notes:**
 * The first given file is the reference which will be use for comparison.
